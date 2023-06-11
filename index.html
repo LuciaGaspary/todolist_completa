@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>To do list</title>
+    <!-- CSS DO PROJETO -->
+    <link rel="stylesheet" href="/css/style.css">
+    <!-- FONT AWESOME -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css" integrity="sha512-5A8nwdMOWrSz20fDsjczgUidUBR8liPYU+WymTZP1lmY9G6Oc7HlZv156XqnsgNUzTyMefFTcsFH/tnJE/+xBg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <!-- JS DO PROJETO -->
+    <script src="/js/script.js" defer></script>
+    <!-- GOOGLE FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script&family=Open+Sans:wght@300;400;700;800&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <div>
+        <i class="fa fa-sun-o toggleDark" aria-hidden="true" id="toggleDark"></i>
+    </div>
+    <div class="todo-container" id="todo-container">
+        <header>
+            <h1>Todo List</h1>
+        </header>
+        <form id="todo-form">
+            <p>Adicione a sua tarefa</p>
+            <div class="form-control">
+                <input type="text" id="todo-input" placeholder="O que você vai fazer?" autocomplete="off">
+                <button type="submit">
+                    <i class="fa fa-plus" aria-hidden="true"></i>
+                </button>
+            </div>
+        </form>
+        <div id="todo-list" class="todos"></div>
+    </div>
+    <div class="background-change" id="background-change">
+        <div class="back-chang" onclick="handleChangeBackground('background')"><img src="/images/background.jpg" alt=""></div>
+        <div class="back-chang" onclick="handleChangeBackground('background2')"><img src="/images/background2.jpg" alt=""></div>   
+        <div class="back-chang" onclick="handleChangeBackground('background3')"><img src="/images/background3.jpg" alt=""></div>
+        <div class="back-chang" onclick="handleChangeBackground('background4')"><img src="/images/background4.jpg" alt=""></div>
+        <div class="back-chang" onclick="handleChangeBackground('background5')"><img src="/images/background5.jpg" alt=""></div>
+
+        <!-- <div class="back-chang" onclick="background1()"><img src="/images/background.jpg" alt=""></div>
+        <div class="back-chang" onclick="background2()"><img src="/images/background2.jpg" alt=""></div>   
+        <div class="back-chang" onclick="background3()"><img src="/images/background3.jpg" alt=""></div>
+        <div class="back-chang" onclick="background4()"><img src="/images/background4.jpg" alt=""></div>
+        <div class="back-chang" onclick="background5()"><img src="/images/background5.jpg" alt=""></div> -->
+
+    </div>
+    <footer>
+        <p>Developed by Lucia Gaspary, 2023</p>
+    </footer>
+</body>
+</html>

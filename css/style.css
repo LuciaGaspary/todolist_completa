@@ -1,0 +1,237 @@
+/* GERAL */
+* {
+    padding: 0;
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    box-sizing: border-box;
+}
+
+body {
+    background-image: url(../images/background3.jpg);
+    background-position: center;
+    background-size: cover;
+    height: 95vh;
+}
+
+h1 {
+    font-family: 'Dancing Script', cursive;
+}
+
+button {
+    background-color: none;
+    background:  rgba(255, 255, 255, 0.3);
+    box-shadow: 0px 5px 15px rgba(106, 21, 180, 0.15);
+    border-radius: 50px;
+    padding: .3rem .6rem;
+    font-size: 11px;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: .4s;
+    border: none;
+    width: 30px;
+    height: 30px;
+
+    /* neumorphism.io */
+    /* border-radius: 50px;
+    background: rgba(255, 255, 255, 0.3);
+    box-shadow:  5px 5px 20px #a4b98f,
+                -5px -5px 20px #badcb2; */
+}
+
+button:hover {
+    background-color: #cacaca;
+    color: #fff;
+}
+
+button:hover > i {
+    color: #fff;
+}
+
+button i {
+    color: #267730;
+    font-weight: bold;
+    pointer-events: none;
+}
+
+input {
+    padding: 0.25rem 0.5rem;
+    outline: none;
+    border-radius: 30px;
+    border: 1px solid #4cec02;
+    width: 100%;
+}
+
+footer p {
+    font-family: 'Dancing Script', cursive;
+    text-align: center;
+    padding-bottom: 32px;
+}
+
+/* botão tema */
+.toggleDark {
+    width: 30px;
+    margin: 16px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    top: 0;
+    right: 0;
+    cursor: pointer;
+}
+.toggleDark i {
+    font-size: 12px;
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+/* TO DO HEADER */
+.todo-container {
+    max-width: 450px;
+    margin: 3rem auto;
+    padding: 1.5rem;
+    border-radius: 15px;
+    box-shadow: 0px 5px 15px rgba(58, 58, 58, 0.25);
+
+    /* FUNDO BRANCO COM TRANSPARENCIA */
+    background-color: #fdfdfd;
+    background: rgba(255, 255, 255, 0.3);
+
+    /* BLUR PARA SUBSTITUIR A TRANSPARENCIA */
+    /* background-color: transparent; 
+    backdrop-filter: blur(3px); */
+}
+
+.todo-container header {
+    text-align: center;
+    padding: 0 1rem 1rem;
+    border-bottom: 1px solid #ccc;
+}
+
+/* TODO FORM */
+#todo-form {
+    padding: 1rem;
+    border-bottom: 1px solid #ccc;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+#todo-form p {
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+}
+
+.form-control {
+    display: flex;
+    width: 100%;
+    height: 35px;
+}
+
+.form-control input {
+    margin-right: .3rem;
+    border-right: 1px solid #ddd;
+}
+
+/* TODO LIST */
+.todo {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 1rem;
+    border-bottom: 1px solid #ccc;
+    transition: .3s;
+}
+
+.todo h3 {
+    flex: 1;
+    font-size: .9rem;
+}
+
+.todo button {
+    margin-left: 0.4rem;
+}
+
+.done {
+    background-color: #a76edb;
+}
+
+.done h3 {
+    color: #ffffff;
+    text-decoration: line-through;
+    font-style: italic;
+}
+
+.delete-todo i {
+    color: red;
+
+}
+
+.finish-todo i {
+    color: green;
+}
+
+/* SCROLLBAR */
+.todos {
+    max-height: 220px;
+    overflow-y: scroll;
+}
+
+/* Firefox */
+* {
+    scrollbar-width: thin;
+    scrollbar-color: rgb(255, 156, 210) rgb(214, 214, 214);
+  }
+  
+  /* Chrome, Edge e Safari */
+  ::-webkit-scrollbar {
+    width: 5px;
+  }
+  
+  ::-webkit-scrollbar-track {
+    background: rgb(211, 211, 211);
+  }
+  
+  ::-webkit-scrollbar-thumb {
+    background-color: rgb(163, 163, 163);
+    border-radius: 20px;
+    border: none;
+  }
+
+   /* troca background */
+  .background-change {
+    max-width: 450px;
+    height: 60px;
+    margin: auto;
+    padding: 1.5rem;
+    border-radius: 15px;
+    box-shadow: 0px 5px 15px rgba(106, 21, 180, 0.15);
+    position: relative;
+    bottom: 32px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;    
+  }
+
+  .background-change .back-chang {
+    width: 50px;
+    height: 50px;
+    background: rgb(255, 255, 255);
+    overflow: hidden;
+    cursor: pointer;
+    border-radius: 50%;
+    display: flex;
+    flex-direction: row;
+    align-content: center;
+  }
+
+  .background-change .back-chang img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
